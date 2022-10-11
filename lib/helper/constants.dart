@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const homeScreen = "homescreen";
+const qrScreen = "qrScreen";
 
 //color
 const primaryBlack = Color(0xff121212);

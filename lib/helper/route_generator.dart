@@ -1,5 +1,6 @@
 import 'package:clone_peduli_lindungi/helper/constants.dart';
 import 'package:clone_peduli_lindungi/screens/home.dart';
+import 'package:clone_peduli_lindungi/screens/qr_scanner.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -7,8 +8,9 @@ class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case homeScreen:
-        // return MaterialPageRoute(builder: (_) => const HomeScreen());
         return _pageBuilderSlidetTrasision(child: const HomeScreen());
+      case qrScreen:
+        return _pageBuilderSlidetTrasision(child: const QrScanner());
       default:
         // If there is no such named route in the switch statement, e.g. /third
         return _errorRoute();
