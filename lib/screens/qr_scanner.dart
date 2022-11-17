@@ -56,7 +56,7 @@ class _QrScannerState extends State<QrScanner> {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.info_outline,
                           color: Colors.white,
                         ),
